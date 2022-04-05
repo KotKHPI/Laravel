@@ -47,7 +47,7 @@
 </style>
 <header class="site-header sticky-top py-1">
     <nav class="container d-flex flex-column flex-md-row justify-content-between">
-        <a class="py-2 d-none d-md-inline-block" href="#/iphone">iPhone</a>
+        <a class="py-2 d-none d-md-inline-block" href="/iphone">iPhone</a>
         <a class="py-2 d-none d-md-inline-block" href="/mac">Mac</a>
         <a class="py-2 d-none d-md-inline-block" href="/airpods">AirPods</a>
         <a class="py-2 d-none d-md-inline-block" href="/ipad">iPad</a>

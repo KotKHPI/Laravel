@@ -12,7 +12,11 @@
 <body>
 @include('include.header')
     @yield('content')
-@include('include.aside')
+{{--@include('include.aside')--}}
+
+@if(Request::is('/'))
+@include('include.tablets')
+@endif
 
 @include('include.footer')
 </body>

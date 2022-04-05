@@ -13,3 +13,8 @@ Route::get('/about', function () {
 Route::get('/feedback', function () {
     return view('feedback');
 });
+
+Route::get('/iphone', function () {
+    return view('iphone');
+});
+
