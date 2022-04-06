@@ -14,13 +14,14 @@ return new class extends Migration
     public function up()
     {
         Schema::create('iphones', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('name');
             $table->string('color');
-            $table->int('memory');
-            $table->tinyint('condition');
-            $table->int('cost');
-            $table->smallint('amount');
+            $table->integer('memory');
+            $table->integer('condition');
+            $table->decimal('cost');
+            $table->integer('amount');
+            $table->string('namePicture');
             $table->timestamps();
         });
     }

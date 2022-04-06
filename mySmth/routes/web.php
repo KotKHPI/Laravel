@@ -14,7 +14,5 @@ Route::get('/feedback', function () {
     return view('feedback');
 });
 
-Route::get('/iphone', function () {
-    return view('iphone');
-});
+Route::get('/iphone', 'App\Http\Controllers\IphoneController@getIphones');
 
