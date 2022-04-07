@@ -15,4 +15,7 @@ Route::get('/feedback', function () {
 });
 
 Route::get('/iphone', 'App\Http\Controllers\IphoneController@getIphones');
+Route::get('/airpods', 'App\Http\Controllers\AirpodsController@getAirpods');
+Route::get('/macbook', 'App\Http\Controllers\MacbookController@getMacbooks');
+Route::get('/ipad', 'App\Http\Controllers\IpadController@getIpads');
 

@@ -8,10 +8,8 @@ use App\Models\Iphone;
 
 class IphoneController extends Controller {
     public function getIphones() {
-
     $iphones = DB::table('iphones')->paginate(15);
     return view('iphone', ['iphones' => $iphones]); //(файл, название для...)
-
     }
 
 }
