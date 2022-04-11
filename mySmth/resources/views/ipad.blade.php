@@ -16,7 +16,9 @@
                     </div>
                     <div class="card-body">
                         <img src="images/{{$ipad->namePicture}}" width="200" height="250" alt="фото">
-                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить за {{$ipad->cost}}$</button>
+                        <a href="{{route('ipadForm', ['id' => $ipad->id])}}">
+                        <button type="submit" class="w-100 btn btn-lg btn-outline-primary">Купить за {{$ipad->cost}}$</button>
+                        </a>
                     </div>
                 </div>
             </div>

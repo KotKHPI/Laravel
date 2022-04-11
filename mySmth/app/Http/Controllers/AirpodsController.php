@@ -10,5 +10,11 @@ class AirpodsController extends Controller {
     public function getAirpods() {
         $airpods = DB::table('airpods')->paginate(15);
         return view('airpods', ['airpods' => $airpods]);
-        }
+    }
+
+    public function airpodsForm(Request $request) {
+    $product = Airpods::query()->where(['id' => $request->id])->get();
+
+    return view('airpodsForm', ['product' => $product]);
+    }
 }

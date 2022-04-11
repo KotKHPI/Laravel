@@ -16,7 +16,9 @@
                     </div>
                     <div class="card-body">
                         <img src="images/{{$airpod->namePicture}}" width="200" height="240" alt="фото">
+                        <a href="{{route('airpodsForm', ['id' => $airpod->id])}}">
                         <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="margin-top: 10px">Купить за {{$airpod->cost}}$</button>
+                        </a>
                     </div>
                 </div>
             </div>

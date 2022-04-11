@@ -16,7 +16,9 @@
                     </div>
                     <div class="card-body">
                         <img src="images/{{$macbook->namePicture}}" width="300" height="190" alt="фото">
-                        <button type="button" class="w-100 btn btn-lg btn-outline-primary" style="margin-top: 20px">Купить за {{$macbook->cost}}$</button>
+                        <a href="{{route('macbookForm', ['id' => $macbook->id])}}">
+                        <button type="submit" class="w-100 btn btn-lg btn-outline-primary" style="margin-top: 20px">Купить за {{$macbook->cost}}$</button>
+                        </a>
                     </div>
                 </div>
             </div>
