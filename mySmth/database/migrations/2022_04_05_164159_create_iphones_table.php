@@ -17,10 +17,10 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('color');
-            $table->int('memory');
-            $table->tinyint('condition');
-            $table->int('cost');
-            $table->smallint('amount');
+            $table->integer('memory');
+            $table->string('image');
+            $table->integer('cost');
+            $table->smallInteger('amount');
             $table->timestamps();
         });
     }

@@ -14,7 +14,10 @@ Route::get('/feedback', function () {
     return view('feedback');
 });
 
-Route::get('/iphone', function () {
-    return view('iphone');
-});
+Route::resource('iphone', \App\Http\Controllers\IphoneController::class);
+Route::resource('pay', \App\Http\Controllers\PayController::class);
+
+//Route::get('/iphone', function () {
+//    return view('iphone');
+//});
 

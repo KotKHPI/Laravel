@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title-block')Главная страница@endsection
+@section('title-block', 'Главная страница')
 
 @section('content')
     <h1 class="text-center"style="color: white; background: black;">Meow</h1>
